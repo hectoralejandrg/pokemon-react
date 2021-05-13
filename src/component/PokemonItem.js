@@ -1,9 +1,10 @@
 const PokemonItem = ({ name, image, type }) => {
+  
   return (
     <div>
-      <h3>{name}</h3>
+      <h2>{name}</h2>
       <img src={image} alt={"Pokemon called " + name} />
-      <h2>{type}</h2>
+      <h3>Type: {type}</h3>
     </div>
   );
 };

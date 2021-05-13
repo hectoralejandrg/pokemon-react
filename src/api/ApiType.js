@@ -1,7 +1,7 @@
 const baseUrl = "https://pokeapi.co/api/v2/";
 
-const getTypes = (type) => {
-  const promise = fetch(
+const getTypes = async (type) => {
+  const promise = await fetch(
     `${baseUrl}type/${encodeURIComponent(type.toLowerCase())}`
   ).then((res) => res.json());
 
